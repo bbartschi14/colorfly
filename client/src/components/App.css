@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Sarala&display=swap');
+
+body {
+    background-color:  rgb(20, 20, 20);
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,101 @@
+
+.NavBar-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.NavBar-title {
+    flex-grow: 1;
+    margin: 0px 10px 12px;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    font-size: 24px;
+    /* background-color: darkgray; */
+
+}
+.Nav-text{
+    font-size: 12px;
+    font-family: 'Sarabun', sans-serif;
+
+
+}
+.Logo-box-small {
+    width: 100px;
+    opacity: .5;
+}
+.Logo-box-small:hover {
+    opacity: 1;
+}
+.Logo-box-small-back {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 100px;
+    opacity: .5;
+    z-index: 99;
+}
+.Page-link-nav-logo {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+    padding: 0 0 20px 30px;
+    transition: .1s ease-in;
+}
+.Page-link-nav-logo:hover .Logo-box-small-back{
+    opacity: 1;
+    display: inline;
+}
+.Page-link-nav-logo:hover .Logo-box-small{
+    opacity: 0;
+}
+.Page-link-nav {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+    padding: 0 0 20px 30px;
+    transition: .1s ease-in;
+}
+.Page-link-nav:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.Login-button-nav {
+    font-family: 'Sarabun', sans-serif;
+    position: relative;
+    font-size: 12px;
+    margin: 4px;
+    padding: 5px 20px;
+    color:white;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: 0.08s ease-in;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.Login-button-nav:hover {
+    cursor: pointer;
+    color:  rgb(20, 20, 20);
+}
+.Login-button-nav::before {
+    content: "";
+    position: absolute;
+    background: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.09s ease-in;
+}
+.Login-button-nav:hover:before {
+    top: 0;
+  }
